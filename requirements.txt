@@ -1,10 +1,7 @@
-# process pdf
+# PROCESSING PDF
 pandas
 numpy
 tabula-py
 
 # API
 requests
-
-# DEV
-jupyterlab

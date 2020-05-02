@@ -2,8 +2,6 @@ import os
 import shutil
 import requests
 
-from src.transformations.url_transformation import URLTransformer
-
 
 class API(object):
     def __init__(self, path_out, verbose=False):
@@ -17,7 +15,7 @@ class API(object):
             r.raise_for_status()
             with open(local_filename, 'wb') as f:
                 for chunk in r.iter_content(chunk_size=chunk_size):
-                    if chunk:  # filter out keep-alive new chunks
+                    if chunk:
                         f.write(chunk)
                         if test_chunk:
                             break
