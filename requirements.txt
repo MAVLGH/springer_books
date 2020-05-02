@@ -1,0 +1,10 @@
+# process pdf
+pandas
+numpy
+tabula-py
+
+# API
+requests
+
+# DEV
+jupyterlab
